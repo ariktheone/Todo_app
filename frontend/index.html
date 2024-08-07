@@ -1,0 +1,36 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://static-00.iconduck.com/assets.00/todo-icon-1024x1024-7nszgsj6.png" alt="Todo App Logo" class="logo"> <!-- Add your logo image file here -->
+    <h1>Todo App</h1>
+    <form id="task-form">
+      <input type="text" id="title" placeholder="Task Title" required>
+      <textarea id="description" placeholder="Task Description"></textarea>
+      <button type="submit">Add Task</button>
+    </form>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tasks...">
+      <select id="sort">
+        <option value="default">Sort By</option>
+        <option value="title">Title</option>
+        <option value="completed">Completion Status</option>
+      </select>
+      <select id="filter">
+        <option value="all">All Tasks</option>
+        <option value="completed">Completed</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
